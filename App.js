@@ -1,19 +1,14 @@
 import React from 'react';
-
-
-//import NavDemo from './components/NavContextDemo'
-import CameraDemo from './components/CameraDemo'
-import Profile from './components/Profile'
-import TipCalculator from './components/TipCalculator'
-import NavDemo1 from './components/NavDemo1.js'
-import MainScreen from './components/MainScreen.js'
+import {View} from 'react-native'
+//import MathQuiz from './components/MathQuiz'
+//import PointDemo from './components/PointDemo'
+//import BankAcctDemo from './components/BankAcctDemo'
+//import Pomodoros from './components/Pomodoros'
+//import ScreenDemo from './components/ScreenDemo'
+import CovidDemo from './components/CovidDemo'
 
 export default function App() {
   return (
-    // <CameraDemo />
-    // <Profile />
-    //<MainScreen />
-    <NavDemo1/>
-
+      <CovidDemo />
   );
 }
