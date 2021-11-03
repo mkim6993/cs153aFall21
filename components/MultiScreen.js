@@ -4,10 +4,10 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 
 import { StyleSheet, Text, View, Button, } from 'react-native';
 
-import FlexDemo1Screen from './FlexDemo1'
-import ShowProfile from './ShowProfile'
-import Login from './Login'
-import NewProfile from './NewProfile.js';
+// import FlexDemo1Screen from './FlexDemo1'
+// import ShowProfile from './ShowProfile'
+// import Login from './Login'
+import Test from './Test.js'
 
 
 
@@ -25,24 +25,22 @@ const MyStack = () => {
           //options={{ title: 'Welcome' }}
         />
 
-        <Stack.Screen
-          name="Login"
-          component={Login}
-          //options={{ title: 'Welcome' }}
-        />
+        // <Stack.Screen
+        //   name="Login"
+        //   component={Login}
+        //   //options={{ title: 'Welcome' }}
+        // />
 
 
         <Stack.Screen
-          name="ShowProfile"
-          component={ShowProfile}
+          name="Test"
+          component={Test}
           //options={{ title: 'Welcome' }}
         />
 
         <Stack.Screen name="Profile" component={ProfileScreen} />
 
-        <Stack.Screen name="FlexDemo1" component={FlexDemo1Screen} />
-
-        <Stack.Screen name="New Profile" component={NewProfile}/>
+      //  <Stack.Screen name="FlexDemo1" component={FlexDemo1Screen} />
 
       </Stack.Navigator>
     </NavigationContainer>
@@ -58,22 +56,22 @@ const HomeScreen = ({ navigation }) => {
                      padding:'10px',
                      justifyContent: 'space-around', }}>
 
-         <Button
-           title="Show Profile"
-           onPress={() =>
-             navigation.navigate('ShowProfile')
-                // we're passing a parameter name:'Jane' to the Profile component!
-           }
-         />
-
-         <Button
-           title="Login"
-           onPress={() =>
-             navigation.navigate('Login')
-                // we're passing a parameter name:'Jane' to the Profile component!
-           }
-         />
-
+         // <Button
+         //   title="Show Profile"
+         //   onPress={() =>
+         //     navigation.navigate('ShowProfile')
+         //        // we're passing a parameter name:'Jane' to the Profile component!
+         //   }
+         // />
+         //
+         // <Button
+         //   title="Login"
+         //   onPress={() =>
+         //     navigation.navigate('Login')
+         //        // we're passing a parameter name:'Jane' to the Profile component!
+         //   }
+         // />
+         //
 
         <Button
           title="Go to Jane's profile"
@@ -92,16 +90,11 @@ const HomeScreen = ({ navigation }) => {
         />
 
         <Button
-          title="Checkout the Flexbox demo!!"
+          title="Checkout my test!"
           onPress={() =>
-            navigation.navigate('FlexDemo1')
+            navigation.navigate('Test')
           }
         />
-
-        <Button
-         title="New Profile"
-         onPress={() =>
-            navigation.navigate('NewProfile')}/>
     </View>
   );
 };
