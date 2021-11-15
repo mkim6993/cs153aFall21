@@ -13,11 +13,13 @@ const CovidDemo = (props) => {
       let cdata = await result.json()
       cdata = cdata.sort(covid_before)
       setData(cdata)
+      console.log('data slice')
+      console.log(data.slice(0,10))
       setLoading(false)
     }catch(e){
       console.log(`error in getCovidData: ${JSON.stringify(e)}`)
     }
-
+    console.log('dog');
   }
 
   function covid_before(a, b) {
