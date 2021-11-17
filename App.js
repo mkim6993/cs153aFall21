@@ -5,7 +5,7 @@ import {View} from 'react-native'
 //import BankAcctDemo from './components/BankAcctDemo'
 //import Pomodoros from './components/Pomodoros'
 //import ScreenDemo from './components/ScreenDemo'
-import CovidDemo from './components/test2.js'
+import CovidDemo from './components/ContextDemo.js'
 //import CovidDemo from './components/CovidDemo.js'
 
 export default function App() {
