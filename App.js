@@ -5,11 +5,12 @@ import {View} from 'react-native'
 //import BankAcctDemo from './components/BankAcctDemo'
 //import Pomodoros from './components/Pomodoros'
 //import ScreenDemo from './components/ScreenDemo'
-import CovidDemo from './components/ContextDemo.js'
+//import GithubRepos from './components/CloudContextDemo.js'
+import GithubRepos from './components/BBView.js'
 //import CovidDemo from './components/CovidDemo.js'
 
 export default function App() {
   return (
-      <CovidDemo />
+      <GithubRepos />
   );
 }

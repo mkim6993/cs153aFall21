@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
     marginLeft: 15,
     marginRight: 15,
     position: 'relative',
-    backgroundColor: 'red'
+    backgroundColor: 'white'
   },
   debuggingBox:{
     position: 'relative',

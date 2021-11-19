@@ -15,6 +15,7 @@ const App = () => {
   const appURL = 'https://desolate-brook-83944.herokuapp.com/appKey'
   //const appURL = 'http://localhost:5000/appKey'
   const data = {appKey:appKey,appURL:appURL}
+  console.log("this is data: " + data)
 
 
 
